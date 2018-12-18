@@ -1,6 +1,6 @@
 {
-  "name": "pwa-history",
-  "short_name": "pwa-history",
+  "name": "jumpstart-frontend",
+  "short_name": "jumpstart-frontend",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

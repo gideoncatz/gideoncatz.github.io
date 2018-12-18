@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f19d6810cd0bff1c740f16e5baa110df.js"
+  "/precache-manifest.05a4fd250b4a42888fa88bfe04dfe4a4.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "pwa-history"});
+workbox.core.setCacheNameDetails({prefix: "jumpstart-frontend"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
