@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function passCodeToParent() {
+            debugger;
+            // Checking if we're in local env or in deployment mode (in which variables surrounded by {{ }} undergo replacement) in Dockerfile
+            var targetWindowOrigin = '{{AppClientProtocolAndHost}}'.startsWith('{{') ? 'http://localhost:8080' : '{{AppClientProtocolAndHost}}';
+            // Passing the received URL with the code to the parent window
+            console.log('The following data will be passed with the event to the parent:');
+            console.log(window.location.href);
+            window.opener.postMessage({
+                    type: 'finalizeLogin',
+                    redirectionUrl: window.location.href
+                },
+                targetWindowOrigin);
+            window.close();
+        }
+    </script>
+</head>
+<body onload="passCodeToParent()">
+</body>
+</html>
