@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         function passCodeToParent() {
-            debugger;
             // Checking if we're in local env or in deployment mode (in which variables surrounded by {{ }} undergo replacement) in Dockerfile
             var targetWindowOrigin = '{{AppClientProtocolAndHost}}'.startsWith('{{') ? 'http://localhost:8080' : '{{AppClientProtocolAndHost}}';
             // Passing the received URL with the code to the parent window

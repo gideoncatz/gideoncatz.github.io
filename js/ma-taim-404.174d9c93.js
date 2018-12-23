@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["ma-taim-404"],{"8cdb":function(t,a,n){"use strict";n.r(a);var e=function(){var t=this,a=t.$createElement,n=t._self._c||a;return n("div",{staticClass:"404"},[n("NavBar",{attrs:{"to-display":{selectionList:!1}}}),n("h3",{staticClass:"main-content-padding"},[t._v("Page not found. Sorry.")])],1)},s=[],i=n("d000"),o={name:"404",components:{NavBar:i["a"]}},c=o,l=n("2877"),r=Object(l["a"])(c,e,s,!1,null,null,null);r.options.__file="404.vue";a["default"]=r.exports}}]);
+//# sourceMappingURL=ma-taim-404.174d9c93.js.map

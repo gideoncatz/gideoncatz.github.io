@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.65203b017e04fc58eec7cfdbd5c95453.js"
+  "/precache-manifest.5835c77f50f9cea974a01bc832208cfa.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "jumpstart-frontend"});
